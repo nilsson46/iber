@@ -33,6 +33,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -48,6 +49,8 @@
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
 =======
+=======
+>>>>>>> 1a307cf868a36c2142ae911be79e9eb18fefc4a3
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -62,7 +65,10 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+<<<<<<< HEAD
 >>>>>>> 1e64d7417479830fc46db7a9d7d7e4dc8495c351
+=======
+>>>>>>> 1a307cf868a36c2142ae911be79e9eb18fefc4a3
   }
 }</component>
   <component name="RunManager">
