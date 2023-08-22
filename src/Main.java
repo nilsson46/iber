@@ -30,6 +30,11 @@ public class Main {
 
         System.out.println("Welcome to Iber :D ");
         String pickupLocation = PickupService.requestPickupLocation();
-        System.out.println("You have selected pickup location: " + pickupLocation);
+        System.out.println("You have selected " + pickupLocation + " as pickup location");
+
+        String dropOffLocation = DropOffPointService.requestDropOffLocation();
+        System.out.println("You have selected " + dropOffLocation +" as drop off location");
+
+        // Select a driver and write that info out aswell. 
     }
 }
