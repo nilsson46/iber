@@ -16,7 +16,7 @@ public class Main {
             System.out.println("Name:" + " " +driver.getName());
             System.out.println("Driver id:" + " " + driver.getId());
             System.out.println("Car:" + " " +driver.getCar());
-            System.out.println("Licence Plate" + " " + driver.getCarId());
+            System.out.println("Licence Plate" + " " + driver.getCarLicense());
             System.out.println("Location" + " " + driver.getLocation());
             System.out.println(" ");
         }
@@ -38,14 +38,28 @@ public class Main {
 
         for(Driver driver : driverList.getDrivers()) {
             if (userInput == driver.getId()) {
-                System.out.println("Driver exist");
-            } 
-        }
-        String pickupLocation = PickupService.requestPickupLocation();
-        System.out.println("You have selected " + pickupLocation + " as pickup location");
+                System.out.println("");
+                System.out.println(driver.getName() + " is your driver today");
 
-        String dropOffLocation = DropOffPointService.requestDropOffLocation();
-        System.out.println("You have selected " + dropOffLocation +" as drop off location");
+                String pickupLocation = PickupService.requestPickupLocation();
+
+                System.out.println("You have selected " + pickupLocation + " as pickup location");
+
+                String dropOffLocation = DropOffPointService.requestDropOffLocation();
+                System.out.println("You have selected " + dropOffLocation +" as drop off location");
+                System.out.println("******************************");
+                System.out.println("Information about your ride");
+                System.out.println("Driver : " + driver.getName());
+                System.out.println("Car : " + driver.getCar());
+                System.out.println("License plate : " + driver.getCarLicense());
+                System.out.println("Pickup location: " + pickupLocation);
+                System.out.println("Drop off location: " + dropOffLocation);
+                System.out.println("******************************");
+
+
+            }
+        }
+
 
         // Select a driver and write that info out aswell. 
     }
