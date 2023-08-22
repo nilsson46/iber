@@ -16,6 +16,7 @@ public class Main {
         saveDrivers(driverList);
 
 
+
         // Test: if drivers are stored in driverList
         for(Driver driver : driverList.getDrivers()){
             System.out.println(" ");
@@ -26,5 +27,9 @@ public class Main {
             System.out.println(" ");
 
         }
+
+        System.out.println("Welcome to Iber :D ");
+        String pickupLocation = PickupService.requestPickupLocation();
+        System.out.println("You have selected pickup location: " + pickupLocation);
     }
 }
