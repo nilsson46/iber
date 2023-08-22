@@ -8,16 +8,8 @@ public class Main {
         driverList.addDriver(new Driver("Johan Bergson", "nissan 350z", "dkj 106", "Luleå Kajakklub"));
         driverList.addDriver(new Driver("Lisa Klyft", "mazda miata mx5", "gfd 456", "Luleå Gränsgatan 19"));
     }
-    public static void main(String[] args) {
-        // Variables
-        DriverList driverList = new DriverList();
 
-
-        saveDrivers(driverList);
-
-
-
-        // Test: if drivers are stored in driverList
+    public static void displayDrivers(DriverList driverList){
         for(Driver driver : driverList.getDrivers()){
             System.out.println(" ");
             System.out.println("Name:" + " " +driver.getName());
@@ -26,8 +18,19 @@ public class Main {
             System.out.println("Location" + " " + driver.getLocation());
             System.out.println(" ");
         }
+    }
+
+
+    public static void main(String[] args) {
+        // Variables
+        DriverList driverList = new DriverList();
+
+
+        saveDrivers(driverList);
 
         System.out.println("Welcome to Iber :D ");
+        displayDrivers(driverList);
+        
         String pickupLocation = PickupService.requestPickupLocation();
         System.out.println("You have selected " + pickupLocation + " as pickup location");
 
