@@ -27,7 +27,6 @@ public class Main {
         DriverList driverList = new DriverList();
         Scanner scanner = new Scanner(System.in);
 
-
         saveDrivers(driverList);
 
         System.out.println("Welcome to Iber :D ");
