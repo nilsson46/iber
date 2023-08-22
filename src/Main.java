@@ -47,14 +47,14 @@ public class Main {
 
                 String dropOffLocation = DropOffPointService.requestDropOffLocation();
                 System.out.println("You have selected " + dropOffLocation +" as drop off location");
-                System.out.println("******************************");
+                System.out.println("*******************************");
                 System.out.println("Information about your ride");
                 System.out.println("Driver : " + driver.getName());
                 System.out.println("Car : " + driver.getCar());
                 System.out.println("License plate : " + driver.getCarLicense());
                 System.out.println("Pickup location: " + pickupLocation);
                 System.out.println("Drop off location: " + dropOffLocation);
-                System.out.println("******************************");
+                System.out.println("*******************************");
 
 
             }
