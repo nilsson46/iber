@@ -14,6 +14,7 @@ public class Main {
         for(Driver driver : driverList.getDrivers()){
             System.out.println(" ");
             System.out.println("Name:" + " " +driver.getName());
+            System.out.println("Driver id:" + " " + driver.getId());
             System.out.println("Car:" + " " +driver.getCar());
             System.out.println("Licence Plate" + " " + driver.getCarId());
             System.out.println("Location" + " " + driver.getLocation());
@@ -33,8 +34,13 @@ public class Main {
         displayDrivers(driverList);
         
         System.out.print("Please select a driver by typing in the id of the driver:");
-        String userInput = scanner.nextLine();
-        
+        int userInput = scanner.nextInt();
+
+        for(Driver driver : driverList.getDrivers()) {
+            if (userInput == driver.getId()) {
+                System.out.println("Driver exist");
+            } 
+        }
         String pickupLocation = PickupService.requestPickupLocation();
         System.out.println("You have selected " + pickupLocation + " as pickup location");
 
