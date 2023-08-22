@@ -24,7 +24,6 @@ public class Main {
             System.out.println("Licence Plate" + " " + driver.getCarId());
             System.out.println("Location" + " " + driver.getLocation());
             System.out.println(" ");
-
         }
     }
 }
