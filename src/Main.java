@@ -37,9 +37,12 @@ public class Main {
         System.out.print("Please select a driver by typing in the id of the driver:");
         int userInput = scanner.nextInt();
 
+        System.out.print("How many passengers: ");
+        int passengerInput = scanner.nextInt();
+
         for(Driver driver : driverList.getDrivers()) {
 
-            if (userInput == driver.getId()) {
+            if (userInput == driver.getId() && passengerInput <= driver.getpassengerCapacity()) {
                 System.out.println("");
                 System.out.println(driver.getName() + " is your driver today");
 
