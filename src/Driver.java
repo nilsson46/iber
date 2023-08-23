@@ -1,13 +1,16 @@
 public class Driver {
     private String name;
+    private int rating;
     private String car;
     private String carLicense;
     private String location;
     private int passengerCapacity;
     private int id;
 
-    public Driver(String name, String car, String carLicense, String location,int passengerCapacity, int id) {
+
+    public Driver(String name,int rating, String car, String carLicense, String location,int passengerCapacity, int id) {
         this.name = name;
+        this.rating = rating;
         this.car = car;
         this.carLicense = carLicense;
         this.location = location;
@@ -19,6 +22,8 @@ public class Driver {
     public String getName() {
         return name;
     }
+
+    public int getRating() {return rating;}
 
     public String getCar() {
         return car;
