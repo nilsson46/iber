@@ -5,9 +5,9 @@ public class Main {
 
     public static void saveDrivers(DriverList driverList){
         // Add data to driver list
-        driverList.addDriver(new Driver("Leif Larsson", "buggati veyron", "hkd 614", "Sandviksgatan 19 Luleå", 1));
-        driverList.addDriver(new Driver("Johan Bergson", "nissan 350z", "dkj 106", "Luleå Kajakklub", 2));
-        driverList.addDriver(new Driver("Lisa Klyft", "mazda miata mx5", "gfd 456", "Luleå Gränsgatan 19", 3));
+        driverList.addDriver(new Driver("Leif Larsson", "buggati veyron", "hkd 614", "Sandviksgatan 19 Luleå", 1, 1));
+        driverList.addDriver(new Driver("Johan Bergson", "nissan 350z", "dkj 106", "Luleå Kajakklub", 4,2));
+        driverList.addDriver(new Driver("Lisa Klyft", "mazda miata mx5", "gfd 456", "Luleå Gränsgatan 19", 4,3));
     }
 
     public static void displayDrivers(DriverList driverList){
@@ -16,6 +16,7 @@ public class Main {
             System.out.println("Name:" + " " +driver.getName());
             System.out.println("Driver id:" + " " + driver.getId());
             System.out.println("Car:" + " " +driver.getCar());
+            System.out.println("Passenger capacity:" + " " + driver.getpassengerCapacity());
             System.out.println("Licence Plate" + " " + driver.getCarLicense());
             System.out.println("Location" + " " + driver.getLocation());
             System.out.println(" ");
@@ -37,6 +38,7 @@ public class Main {
         int userInput = scanner.nextInt();
 
         for(Driver driver : driverList.getDrivers()) {
+
             if (userInput == driver.getId()) {
                 System.out.println("");
                 System.out.println(driver.getName() + " is your driver today");
